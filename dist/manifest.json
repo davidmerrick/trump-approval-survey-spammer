@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Trump Media Accountability Form Filler",
+    "name": "Trump One Month Approval Survey Spammer",
     "description": "Because fuck Donald Trump",
-    "version": "3.0",
+    "version": "1.0",
     "permissions": [
         "declarativeContent",
         "tabs",
@@ -10,6 +10,7 @@
         "cookies",
         "webRequest",
         "webRequestBlocking",
+        "https://*.gop.com/*",
         "https://*.donaldjtrump.com/*"
     ],
     "browser_action": {},
@@ -22,7 +23,7 @@
     "content_scripts": [
         {
           "matches": [
-              "https://action.donaldjtrump.com/mainstream-media-accountability-survey*"
+              "https://gop.com/trump-first-month-approval-survey*"
           ],
           "js": ["js/client-bundle.js"]
         }

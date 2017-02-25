@@ -27,7 +27,7 @@ function trackFormSubmit(){
 
 function removeCsrfCookie(callback){
     let cookieDetails = {
-        url: "https://action.donaldjtrump.com",
+        url: "https://gop.com",
         name: "csrftoken"
     };
     chrome.cookies.remove(cookieDetails, () => {
